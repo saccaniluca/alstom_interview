@@ -8,9 +8,9 @@ class Result
      * The function is expected to return an INTEGER.
      * The function accepts INTEGER_ARRAY ar as parameter.
      */
-    public static int simpleArraySum(List<int> ar)
+    public static int ArraySum(List<int> ar)
     {
-        return 0; //todo implement here your solution.
+        return ar.Sum();
     }
 }
 
@@ -24,7 +24,7 @@ public class SimpleArraySum
 
         List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
 
-        int result = Result.simpleArraySum(ar);
+        int result = Result.ArraySum(ar);
 
         textWriter.WriteLine(result);
 
